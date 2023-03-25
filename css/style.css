@@ -10154,4 +10154,7 @@ textarea.form-control {
   opacity: 1;
 }
 
-
+.p{
+  text-align: justify;
+  font-size:14px;
+}
