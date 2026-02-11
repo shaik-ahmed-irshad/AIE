@@ -1,167 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Ahmed Institute of Excellence</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Ahmed's Institute of Excellence</title>
+  <meta name="description" content="Learn about Ahmed's Institute of Excellence — building careers since 2015. Our vision, mission, journey, and what makes us different.">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50: '#eef2f7',
+              100: '#d4dce8',
+              200: '#a9b9d1',
+              300: '#7e96ba',
+              400: '#5373a3',
+              500: '#3b6b9b',
+              600: '#2c5a8a',
+              700: '#1e4a7a',
+              800: '#1e3a5f',
+              900: '#152d4a',
+              950: '#0f172a'
+            }
+          }
+        }
+      }
+    }
+  </script>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-  <link rel="stylesheet" href="css/animate.css" />
-
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" />
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
-  <link rel="stylesheet" href="css/jquery.timepicker.css" />
-
-  <link rel="stylesheet" href="css/flaticon.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
 </head>
-<style>
-  .float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 80px;
-    right: 30px;
-    /* background-color:greenyellow; */
-    /* background-color:#25d366; */
-    color: #25d366;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 50px;
-    /* box-shadow: 2px 2px 3px #999; */
-    z-index: 100;
 
-  }
-  @media (max-width: 600px) {
-  .hero-wrap.hero-wrap-2 {
-    height: 200px !important;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top; }
-    
-    .hero-wrap.hero-wrap-2 .slider-text {
-      height: 200px; }
-      
-	}
-  .my-float {
-    margin-top: 16px;
-    animation: fade-up 1000ms forwards;
-    animation-delay: 1000ms;
-  }
-</style>
+<body class="bg-white text-slate-700 font-sans antialiased">
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a href="index.html"><img src="images/logo.svg" alt=""> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="gallery.html" class="nav-link">Gallery</a>
-          </li>
-          <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
-            <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="https://rcrfw.courses.store?utm_source=whatsapp&utm_medium=tutor-website-share&utm_campaign=app-home-banner" class="dropdown-item">Online</a>
-              <a href="courses.html" class="dropdown-item">Offline</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Coaching</a>
-            <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="coaching.html#engg" class="dropdown-item">Engineering</a>
-              <a href="coaching.html#engg" class="dropdown-item">Diploma</a>
-              <a href="coaching.html#inter" class="dropdown-item">Intermediate</a>
-              <a href="coaching.html#school" class="dropdown-item">School</a>
-            </div>
-          </div>
-          <li class="nav-item">
-            <a href="instructor.html" class="nav-link">Instructor</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-          <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Notification</a>
-            <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="" class="dropdown-item">OU Result</a>
-              <a href="" class="dropdown-item">JNTU Result</a>
-              <a href="https://www.sbtet.telangana.gov.in/index.html#!/index/DiplomaStudentResult" class="dropdown-item">Diploma Result</a>
-              <a href="" class="dropdown-item">Intermediate Result</a>
-              <a href="" class="dropdown-item">SSC Result</a>
-            </div>
-        </ul>
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="images/logo1.svg" alt="Ahmed's Institute of Excellence" class="h-10 lg:h-12 w-auto">
+        </a>
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="px-3 py-2 text-sm font-medium text-white/90 hover:text-amber-400 transition-colors">Home</a>
+          <a href="about.html" class="px-3 py-2 text-sm font-medium text-amber-400 hover:text-amber-300 transition-colors">About</a>
+          <a href="coaching.html" class="px-3 py-2 text-sm font-medium text-white/90 hover:text-amber-400 transition-colors">Coaching</a>
+          <a href="courses.html" class="px-3 py-2 text-sm font-medium text-white/90 hover:text-amber-400 transition-colors">Courses</a>
+          <a href="gallery.html" class="px-3 py-2 text-sm font-medium text-white/90 hover:text-amber-400 transition-colors">Gallery</a>
+          <a href="instructor.html" class="px-3 py-2 text-sm font-medium text-white/90 hover:text-amber-400 transition-colors">Instructor</a>
+          <a href="contact.html" class="px-3 py-2 text-sm font-medium text-white/90 hover:text-amber-400 transition-colors">Contact</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden p-2 text-white hover:text-amber-400 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
       </div>
     </div>
   </nav>
-  <!-- END nav -->
 
-  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/abt.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text align-items-end justify-content-center">
-        <div class="col-md-9 ftco-animate pb-5 text-center">
-          <p class="breadcrumbs">
-            <span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span>
-            <span>About us <i class="fa fa-chevron-right"></i></span>
+  <!-- ============ MOBILE NAV ============ -->
+  <div id="mobile-nav" class="mobile-nav fixed inset-0 z-[60] bg-navy-950/95 backdrop-blur-md lg:hidden">
+    <div class="flex flex-col h-full p-6 overflow-y-auto">
+      <div class="flex items-center justify-between mb-8">
+        <img src="images/logo1.svg" alt="AIE" class="h-10">
+        <button id="close-nav" class="p-2 text-white hover:text-amber-400">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="flex flex-col gap-1">
+        <a href="index.html" class="px-4 py-3 text-white/90 font-medium rounded-lg hover:bg-white/5">Home</a>
+        <a href="about.html" class="px-4 py-3 text-amber-400 font-medium rounded-lg bg-white/5">About</a>
+        <a href="coaching.html" class="px-4 py-3 text-white/90 font-medium rounded-lg hover:bg-white/5">Coaching</a>
+        <a href="courses.html" class="px-4 py-3 text-white/90 font-medium rounded-lg hover:bg-white/5">Courses</a>
+        <a href="gallery.html" class="px-4 py-3 text-white/90 font-medium rounded-lg hover:bg-white/5">Gallery</a>
+        <a href="instructor.html" class="px-4 py-3 text-white/90 font-medium rounded-lg hover:bg-white/5">Instructor</a>
+        <a href="contact.html" class="px-4 py-3 text-white/90 font-medium rounded-lg hover:bg-white/5">Contact</a>
+      </div>
+    </div>
+  </div>
+  <!-- ============ PAGE HERO ============ -->
+  <section class="bg-navy-800 pt-24 pb-16 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-10 left-10 w-72 h-72 bg-amber-400 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-10 w-96 h-96 bg-navy-400 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <nav class="flex items-center gap-2 text-sm text-white/60 mb-4">
+        <a href="index.html" class="hover:text-amber-400 transition-colors">Home</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        <span class="text-amber-400">About Us</span>
+      </nav>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our Story</h1>
+      <p class="mt-3 text-lg text-white/70 max-w-2xl">10 years of turning struggling students into successful engineers.</p>
+    </div>
+  </section>
+
+  <!-- ============ OUR STORY ============ -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Images -->
+        <div class="relative reveal-left">
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img src="images/abt1.jpg" alt="Ahmed's Institute classroom" class="w-full h-80 object-cover" loading="lazy">
+          </div>
+          <div class="absolute -bottom-6 -right-6 w-48 h-48 rounded-xl overflow-hidden shadow-xl border-4 border-white hidden md:block">
+            <img src="images/coaching-bg.jpg" alt="Students learning" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <!-- Experience badge -->
+          <div class="absolute -top-4 -left-4 bg-amber-500 text-navy-950 rounded-xl px-5 py-3 shadow-lg">
+            <span class="text-2xl font-bold block leading-none">10+</span>
+            <span class="text-xs font-semibold uppercase tracking-wider">Years</span>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="reveal-right">
+          <span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-4">Who We Are</span>
+          <h2 class="text-3xl lg:text-4xl font-bold text-navy-800 mb-6">
+            We Don't Just Teach Subjects.<br>
+            <span class="text-amber-500">We Build Confidence.</span>
+          </h2>
+          <p class="text-slate-600 leading-relaxed mb-4">
+            Most students don't fail because they're not smart enough — they fail because they never had access to the right teaching. That's the gap Ahmed's Institute was built to close.
           </p>
-          <h1 class="mb-0 bread">About Us</h1>
-        </div>
-      </div>
-    </div>
-  </section>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            Founded in 2015 by Er. Salman Ahmed, a Government Polytechnic + Osmania University graduate, AIE started with a simple belief: <strong class="text-navy-800">every student deserves a teacher who actually cares about their success</strong>. Today, 1,500+ students later, we've helped clear over 8,000 subjects — many of them backlogs and supply exams that students thought were impossible.
+          </p>
 
-  <section class="ftco-section ftco-about img">
-    <div class="container">
-      <div class="row d-flex">
-        <div class="col-md-12 about-intro">
-          <div class="row">
-            <div class="col-md-6 d-flex">
-              <div class="d-flex about-wrap">
-                <div class="img d-flex align-items-center justify-content-center"
-                  style="background-image: url(images/abt1.jpg)"></div>
-                <div class="img-2 d-flex align-items-center justify-content-center"
-                  style="background-image: url(images/coaching-bg.jpg)"></div>
+          <div class="flex flex-wrap gap-6">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
+              <span class="text-sm font-medium text-slate-700">JNTU · OU · SBTET Affiliated</span>
             </div>
-            <div class="col-md-6 pl-md-5 py-5">
-              <div class="row justify-content-start pb-3">
-                <div class="col-md-12 heading-section ftco-animate">
-                  <span class="subheading">Know About Us</span>
-                  <h2 class="mb-4">Our Vision</h2>
-                  <p class="text-justify">
-                    Building a legacy of excellence in education by harnessing the power of technology.
-                  </p>
-                  <h2 class="mb-4">Our Mission</h2>
-                  <p class="text-justify">
-                    To provide accessible and high-quality coaching and practical courses that equip students with 
-                    the skills, knowledge, and confidence to excel in entrance exams, engineering subjects, and 
-                    practical fields, fostering a generation of skilled professionals for the nation's progress.
-                  </p>
-                  <p>
-                    <a href="contact.html" class="btn btn-primary">Get in touch with us</a>
-                  </p>
-                </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
+              <span class="text-sm font-medium text-slate-700">4.9★ Google Rating</span>
             </div>
           </div>
         </div>
@@ -169,400 +150,267 @@
     </div>
   </section>
 
-  <section class="ftco-section ftco-counter img" id="section-counter"
-    style="background-image:url(images/books.jpeg)">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-          <div class="block-18 d-flex align-items-center">
-            <div class="icon"><span class="flaticon-online"></span></div>
-            <div class="text">
-              <strong class="number" data-number="8000">0</strong>
-              <span>Subjects Clear By Students</span>
-            </div>
+  <!-- ============ VISION & MISSION ============ -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="inline-block px-3 py-1 bg-navy-100 text-navy-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-3">What Drives Us</span>
+        <h2 class="text-3xl lg:text-4xl font-bold text-navy-800">Vision & Mission</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto reveal-stagger">
+        <!-- Vision -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-14 h-14 rounded-xl bg-amber-100 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-800 mb-3">Our Vision</h3>
+          <p class="text-slate-600 leading-relaxed">
+            To become the most trusted education partner for every engineering, diploma, and school student in Telangana — known not for fancy infrastructure, but for <strong class="text-navy-800">results that speak louder than marketing</strong>.
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-14 h-14 rounded-xl bg-navy-100 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy-800 mb-3">Our Mission</h3>
+          <p class="text-slate-600 leading-relaxed">
+            To provide <strong class="text-navy-800">affordable, accessible, and genuinely helpful</strong> coaching that equips students with real understanding — not rote memorization — so they clear exams with confidence and build careers with competence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY / TIMELINE ============ -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-3">Our Journey</span>
+        <h2 class="text-3xl lg:text-4xl font-bold text-navy-800">From a Small Classroom<br>to 1,500+ Success Stories</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto relative">
+        <!-- Vertical line -->
+        <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-slate-200 md:-translate-x-px"></div>
+
+        <!-- 2015 -->
+        <div class="relative flex items-start mb-12 md:mb-16 group">
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-amber-500 border-4 border-white shadow -translate-x-1/2 mt-1.5 z-10"></div>
+          <div class="ml-14 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+            <span class="text-sm font-bold text-amber-600">2015</span>
+            <h4 class="text-lg font-bold text-navy-800 mt-1">The Beginning</h4>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed">Er. Salman Ahmed starts Ahmed's Institute of Excellence in Azampura, Hyderabad with a handful of diploma engineering students and one mission: make learning accessible.</p>
           </div>
         </div>
-        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-          <div class="block-18 d-flex align-items-center">
-            <div class="icon"><span class="flaticon-graduated"></span></div>
-            <div class="text">
-              <strong class="number" data-number="1500">0</strong>
-              <span>Students Studied Till Date</span>
-            </div>
+
+        <!-- 2017 -->
+        <div class="relative flex items-start mb-12 md:mb-16 group">
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-navy-600 border-4 border-white shadow -translate-x-1/2 mt-1.5 z-10"></div>
+          <div class="ml-14 md:ml-auto md:w-1/2 md:pl-12">
+            <span class="text-sm font-bold text-navy-600">2017</span>
+            <h4 class="text-lg font-bold text-navy-800 mt-1">Expanded to B.E/B.Tech</h4>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed">Word-of-mouth results bring in engineering degree students. Added all major branches — Civil, CSE, Mechanical, EEE, ECE. Faculty team grows.</p>
           </div>
         </div>
-        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-          <div class="block-18 d-flex align-items-center">
-            <div class="icon"><span class="flaticon-instructor"></span></div>
-            <div class="text">
-              <strong class="number" data-number="550">0</strong>
-              <span>B.E, B.Tech & Diploma Graduates</span>
-            </div>
+
+        <!-- 2019 -->
+        <div class="relative flex items-start mb-12 md:mb-16 group">
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-amber-500 border-4 border-white shadow -translate-x-1/2 mt-1.5 z-10"></div>
+          <div class="ml-14 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+            <span class="text-sm font-bold text-amber-600">2019</span>
+            <h4 class="text-lg font-bold text-navy-800 mt-1">1,000 Subjects Cleared</h4>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed">Milestone: students coached at AIE clear 1,000+ supply and regular subjects across JNTU, OU, and SBTET universities. Intermediate and school coaching added.</p>
           </div>
         </div>
-        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-          <div class="block-18 d-flex align-items-center">
-            <div class="icon"><span class="flaticon-tools"></span></div>
-            <div class="text">
-              <strong class="number" data-number="450">0</strong>
-              <span>Students Pursuring Their Careers</span>
-            </div>
+
+        <!-- 2022 -->
+        <div class="relative flex items-start mb-12 md:mb-16 group">
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-navy-600 border-4 border-white shadow -translate-x-1/2 mt-1.5 z-10"></div>
+          <div class="ml-14 md:ml-auto md:w-1/2 md:pl-12">
+            <span class="text-sm font-bold text-navy-600">2022</span>
+            <h4 class="text-lg font-bold text-navy-800 mt-1">Vocational & Online Courses</h4>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed">Launched practical skill courses — AutoCAD, Python, Web Development, E-TABS — plus online coaching platform for students who can't attend in person.</p>
+          </div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="relative flex items-start group">
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-amber-500 border-4 border-white shadow -translate-x-1/2 mt-1.5 z-10"></div>
+          <div class="ml-14 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+            <span class="text-sm font-bold text-amber-600">2025 & Beyond</span>
+            <h4 class="text-lg font-bold text-navy-800 mt-1">8,000+ Subjects & Growing</h4>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed">1,500+ students trained, 550+ graduates produced, 13+ faculty members, 4.9★ Google rating — and we're just getting started. Entrance exam coaching (E-CET, EAMCET, POLYCET) now in full swing.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
- <!-- testimonials  -->
- <section class="ftco-section testimony-section bg-light">
-  <div class="overlay"
-    style="background-image: url('https://images.pexels.com/photos/7713351/pexels-photo-7713351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-  </div>
-  <div class="container">
-    <div class="row pb-4">
-      <div class="col-md-7 heading-section ftco-animate">
-        <span class="subheading">Testimonial</span>
-        <h2 class="mb-4">What Our Students Says</h2>
-      </div>
+  <!-- ============ WHAT MAKES US DIFFERENT ============ -->
+  <section class="py-16 bg-navy-800 text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute -top-20 -right-20 w-96 h-96 bg-amber-400 rounded-full blur-3xl"></div>
     </div>
-  </div>
-  <div class="container container-2">
-    <div class="row ftco-animate">
-      <div class="col-md-12">
-        <div class="carousel-testimony owl-carousel">
-          <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <p class="star">
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </p>
-                <p class="mb-4 text-justify">
-                  your search ends here for an engineering institute it is the best n affordable institute I have ever
-                  seen there are many more institutes near my house but i prefer Ahmed's institute of excellence which
-                  is 25 kms far away from my house
-                </p>
-                <div class="d-flex align-items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="text-center mb-14 reveal">
+        <span class="inline-block px-3 py-1 bg-white/10 text-amber-400 text-xs font-semibold rounded-full uppercase tracking-wider mb-3">Why Students Choose Us</span>
+        <h2 class="text-3xl lg:text-4xl font-bold">Other Institutes Sell Promises.<br><span class="text-amber-400">We Deliver Results.</span></h2>
+      </div>
 
-                  <div class="pl-3">
-                    <a href="https://goo.gl/maps/oj9VUnWRgfrNs7fM8" class="name">Al Haseeb</a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal-stagger">
+        <!-- Pillar 1 -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-colors duration-300 reveal">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
           </div>
-          <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <p class="star">
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </p>
-                <p class="mb-4 text-justify">
-                  Since,im studying here for last 2 years and I have learned a lot of things in such short time.
-                  Tutors are great here and will give you the things that will not be easy to find anywhere
-                  else..great institute ever..& thanks to salman ahmed sir..
-                <div class="d-flex align-items-center">
-
-                  <div class="pl-3">
-                    <a href="https://goo.gl/maps/Y13AmofmZ2h5yuEu8" class="name">Hashim Ali Khan</a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <p class="star">
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </p>
-                <p class="mb-4 text-justify">
-                  Best Institute near me.Excellent tuition centre which help you in clearing your diplom and engineering with high percentage. Highly
-                  qualified lecturers who understand the weaknesses of their students and help them accordingly..
-                </p>
-                <div class="d-flex align-items-center">
-
-                  <div class="pl-3">
-                    <a href="https://goo.gl/maps/d2biCutc6ADgM7957" class="name">Mohammed Rasool _007</a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <p class="star">
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </p>
-                <p class="mb-4 text-justify">
-                  Excellence teaching in a good manner and they always try to motivate the students and they will
-                  teach in a comfortable environment so that we can get the best out of our self for everytime and I
-                  thing for every student who wanted to be a good ranker in ecet..👍👌
-                </p>
-                <div class="d-flex align-items-center">
-
-                  <div class="pl-3">
-                    <a href="https://goo.gl/maps/b7qiVL1YwuVkfmys9" class="name">Mohammed Aman Uddin_041</a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <p class="star">
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </p>
-                <p class="mb-4 text-justify">
-                  The best institution in this area and well qualified staff at low fee
-                </p>
-                <div class="d-flex align-items-center">
-
-                  <div class="pl-3">
-                    <a href="https://goo.gl/maps/zL2VRrjnqorxw61m9" class="name">Ali Abdulhameed</a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h3 class="text-lg font-bold mb-2">Concept-First Teaching</h3>
+          <p class="text-white/70 text-sm leading-relaxed">We teach you <em>why</em> something works — not just how to write it in an exam. Understanding lasts; memorization doesn't.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- testimonials end -->
 
-  <section class="ftco-intro ftco-section ftco-no-pb">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center">
-          <div class="img"
-            style="background-image: url('https://images.pexels.com/photos/2781814/pexels-photo-2781814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-            <div class="overlay"></div>
-            <h2>We Are A Career Building Traning Institute</h2>
-            <p>
-              AIE is proud to train students and help them achieve their dreams. Our team's leadership qualities and
-              good decisions have always helped the students be successful in their careers and lives.
-            </p>
-            <p class="mb-0">
-              <a href="#" class="btn btn-primary px-4 py-2">Enroll Now</a>
-            </p>
+        <!-- Pillar 2 -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-colors duration-300 reveal">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
+          <h3 class="text-lg font-bold mb-2">Genuinely Affordable</h3>
+          <p class="text-white/70 text-sm leading-relaxed">₹3,000/subject for engineering — roughly ₹100/day. No hidden fees, no semester packages, no financial pressure.</p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-colors duration-300 reveal">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Weekly Tests & Tracking</h3>
+          <p class="text-white/70 text-sm leading-relaxed">Regular tests mirror university exam patterns. We track your weak spots and fix them before the exam — not after you fail.</p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-colors duration-300 reveal">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Small Batch Sizes</h3>
+          <p class="text-white/70 text-sm leading-relaxed">Max 40 students per batch. You're not a roll number here — your teachers know your name, your weaknesses, and your potential.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- about -->
-  <section class="ftco-section ftco-about img">
-    <div class="container">
-      <div class="row d-flex">
-        <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
-          <div class="w-100 mb-4 mb-md-0">
-            <span class="subheading">Welcome to Ahmed's Institute</span>
-            <h2 class="mb-4">About Us</h2>
-            <p class="text-justify">
-              We at AIE take great pride in welcoming you to one of the best engineering institutes in the Hyderabad
-              region. Since 2015, the AIE has guided the careers and lives of many successful engineering aspirants. We
-              precisely follow unique strategies in our educational process to ensure that each and every student enjoys
-              learning and acquires syllable-level knowledge as well as lifelong learning.
-            </p>
-            <p class="text-justify">
-              We focus on making the gap between students and the syllabus smaller in order to give students the
-              confidence to cross this gap and achieve academic success. We continuously follow and try to evolve the
-              most straightforward techniques that allow students to learn more in less time, and remember for a more
-              extended period of time. We treat students well and are always ready to help them with careers and
-              learning.
-            </p>
-            <!-- <div class="d-flex video-image align-items-center mt-md-4">
-                <a
-                  href="#"
-                  class="video img d-flex align-items-center justify-content-center"
-                  style="background-image: url(images/about.jpg)"
-                >
-                  <span class="fa fa-play-circle"></span>
-                </a>
-                <h4 class="ml-4">Learn anything from StudyLab, Watch video</h4>
-              </div> -->
+  <!-- ============ STATS BAR ============ -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="reveal">
+          <div class="text-3xl lg:text-4xl font-bold text-navy-800">
+            <span class="counter" data-target="8000">0</span>+
           </div>
+          <p class="text-sm text-slate-500 mt-1 font-medium">Subjects Cleared</p>
         </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-              <div class="services">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-tools"></span>
-                </div>
-                <div class="media-body">
-                  <h3 class="heading mb-3">Top Quality Education</h3>
-                  <p class="p">A learning experience that provides students with the
-                    knowledge, skills, and competencies they need to succeed in their lives.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-              <div class="services">
-                <div class="icon icon-2 d-flex align-items-center justify-content-center">
-                  <span class="flaticon-instructor"></span>
-                </div>
-                <div class="media-body">
-                  <h3 class="heading mb-3">Highly Skilled Instructor</h3>
-                  <p class="p">Has The ability to inspire and motivate students while
-                    providing them with the knowledge and skills they need to succeed.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-              <div class="services">
-                <div class="icon icon-3 d-flex align-items-center justify-content-center">
-                  <span class="flaticon-quiz"></span>
-                </div>
-                <div class="media-body">
-                  <h3 class="heading mb-3">Weekly Tests &amp; Quiz</h3>
-                  <p class="p">we help to track Student progress, By taking weekly tests and quizzes</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-              <div class="services">
-                <div class="icon icon-4 d-flex align-items-center justify-content-center">
-                  <span class="flaticon-browser"></span>
-                </div>
-                <div class="media-body">
-                  <h3 class="heading mb-3">Certification Courses</h3>
-                  <p class="p"> we provide Certification courses which can be a good way to demonstrate knowledge in a
-                    subject and add
-                    credibility to your resume.</p>
-                </div>
-              </div>
-            </div>
+        <div class="reveal">
+          <div class="text-3xl lg:text-4xl font-bold text-navy-800">
+            <span class="counter" data-target="1500">0</span>+
           </div>
+          <p class="text-sm text-slate-500 mt-1 font-medium">Students Trained</p>
+        </div>
+        <div class="reveal">
+          <div class="text-3xl lg:text-4xl font-bold text-navy-800">
+            <span class="counter" data-target="550">0</span>+
+          </div>
+          <p class="text-sm text-slate-500 mt-1 font-medium">Graduates Produced</p>
+        </div>
+        <div class="reveal">
+          <div class="text-3xl lg:text-4xl font-bold text-navy-800">
+            <span class="counter" data-target="13">0</span>+
+          </div>
+          <p class="text-sm text-slate-500 mt-1 font-medium">Expert Faculty</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- about end -->
 
-  <!-- whatsapp -->
-  <a href="https://wa.me/918142625611" class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
+  <!-- ============ CTA ============ -->
+  <section class="py-16 lg:py-20 bg-gradient-to-r from-amber-500 to-amber-600 reveal-scale">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold text-navy-950 mb-4">Ready to See the Difference?</h2>
+      <p class="text-navy-900/80 text-lg mb-8 max-w-2xl mx-auto">Don't just take our word for it. Walk into our institute, attend a free demo class, and judge for yourself.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/918142625611?text=Hi%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20book%20a%20free%20demo%20class." class="inline-flex items-center gap-2 bg-navy-800 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-navy-900 transition-colors shadow-lg">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Book Free Demo
+        </a>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-navy-800 px-8 py-3.5 rounded-lg font-semibold hover:bg-white/90 transition-colors shadow-lg">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FLOATING SOCIAL BUTTONS ============ -->
+  <a href="https://www.instagram.com/ahmedsinstitute/" class="fixed bottom-[6.5rem] right-8 z-[999] w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.882 0 1.441 1.441 0 012.882 0z"/></svg>
+  </a>
+  <a href="https://wa.me/918142625611" class="fixed bottom-8 right-8 z-[999] w-14 h-14 bg-[#25d366] rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 transition-transform duration-300 hover:scale-110" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
-  <!-- footer -->
-  <footer class="ftco-footer ftco-no-pt">
-    <div class="container">
-      <div class="row mb-3">
-        <div class="col-md pt-2">
-          <div class="ftco-footer-widget pt-md-5 mb-4">
-            <!-- <h2 class="ftco-heading-2">About</h2> -->
-            <a href="index.html"><img src="images/logo1.svg" alt=""></a>
-            <p>
-              At Ahmed's Institute, we're dedicated to helping students achieve their goals and dreams.
-            </p>
-            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-              <li class="ftco-animate">
-                <a href="https://twitter.com/AhmedsInstitute?t=xQPrgc10XeZ-lmQcE8vpOA&s=09"><span
-                    class="fa fa-twitter"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="https://www.facebook.com/profile.php?id=100086876602928"><span
-                    class="fa fa-facebook"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="https://www.instagram.com/invites/contact/?i=jici5nxuxh63&utm_content=ptdewcr"><span
-                    class="fa fa-instagram"></span></a>
-              </li>
-            </ul>
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-navy-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <a href="index.html">
+            <img src="images/logo1.svg" alt="Ahmed's Institute" class="h-12 mb-6">
+          </a>
+          <p class="text-slate-400 leading-relaxed mb-6 max-w-md">
+            At Ahmed's Institute, we're dedicated to helping students achieve their goals and dreams.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://twitter.com/AhmedsInstitute?t=xQPrgc10XeZ-lmQcE8vpOA&s=09" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber-500 transition-colors" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100086876602928" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber-500 transition-colors" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/ahmedsinstitute/" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber-500 transition-colors" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.882 0 1.441 1.441 0 012.882 0z"/></svg>
+            </a>
           </div>
         </div>
-        <div class="col-md pt-2">
-          <div class="ftco-footer-widget pt-md-5 mb-4">
-            <h2 class="ftco-heading-2">Join Us & Move Towards Excellence</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li><a href="https://g.page/AhmedsInstitute?share"><span class="icon fa fa-map-marker"></span><span
-                      class="text">Opp. Sahifa Masjid, Beside SBI Bank,
-                      Azampura, Chaderghat, Hyderabad, Telangana 500024.</span></a></li>
-                <li><span class="icon fa fa-phone"></span><span class="text"><a href="https://wa.me/+918142625611"> +91
-                      814 2625 611</a> / <a href="tel:+918142625311"> +91 814 2625311</a></span></li>
-                <li><a href="https://mail.google.com/mail/"><span class="icon fa fa-paper-plane"></span><span
-                      class="text">info.ahmedsintitute@gmail.com</span></a></li>
-              </ul>
+        <div>
+          <h3 class="text-lg font-bold mb-6">Join Us & Move Towards Excellence</h3>
+          <div class="space-y-4">
+            <a href="https://g.page/AhmedsInstitute?share" class="flex items-start gap-3 text-slate-400 hover:text-amber-400 transition-colors" target="_blank" rel="noopener">
+              <svg class="w-5 h-5 mt-1 flex-shrink-0 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Opp. Sahifa Masjid, Beside SBI Bank, Azampura, Chaderghat, Hyderabad, Telangana 500024.</span>
+            </a>
+            <div class="flex items-center gap-3 text-slate-400">
+              <svg class="w-5 h-5 flex-shrink-0 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <span>
+                <a href="https://wa.me/+918142625611" class="hover:text-amber-400 transition-colors">+91 814 2625 611</a> / 
+                <a href="tel:+918142625311" class="hover:text-amber-400 transition-colors">+91 814 2625 311</a>
+              </span>
             </div>
+            <a href="mailto:info.ahmedsintitute@gmail.com" class="flex items-center gap-3 text-slate-400 hover:text-amber-400 transition-colors">
+              <svg class="w-5 h-5 flex-shrink-0 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>info.ahmedsintitute@gmail.com</span>
+            </a>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | Designed by
-            <i class="fa fa-heart" aria-hidden="true"></i> by
-            <a href="https://ahmedsintitute.com" target="_blank">ADS</a>
-          </p>
-        </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <p class="text-center text-slate-500 text-sm">
+          &copy; <script>document.write(new Date().getFullYear());</script> Ahmed's Institute of Excellence. All rights reserved. Designed by ADS.
+        </p>
       </div>
     </div>
   </footer>
-  <!-- footer end-->
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen">
-    <svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" />
-    </svg>
-  </div>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
 </body>
-
 </html>
