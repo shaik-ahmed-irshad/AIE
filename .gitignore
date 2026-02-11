@@ -1,0 +1,10 @@
+# Legacy files (old template - not needed in production)
+# legacy/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,6 +1,97 @@
 /* Ahmed's Institute of Excellence - Custom Styles */
 /* Lightweight custom CSS to complement Tailwind */
 
+/* ===== Navy Color Palette (Custom) ===== */
+:root {
+  --navy-50: #eef2f7;
+  --navy-100: #d4dce8;
+  --navy-200: #a9b9d1;
+  --navy-300: #7e96ba;
+  --navy-400: #5373a3;
+  --navy-500: #3b6b9b;
+  --navy-600: #2c5a8a;
+  --navy-700: #1e4a7a;
+  --navy-800: #1e3a5f;
+  --navy-900: #152d4a;
+  --navy-950: #0f172a;
+}
+
+/* Navy backgrounds */
+.bg-navy-50 { background-color: var(--navy-50); }
+.bg-navy-100 { background-color: var(--navy-100); }
+.bg-navy-200 { background-color: var(--navy-200); }
+.bg-navy-300 { background-color: var(--navy-300); }
+.bg-navy-400 { background-color: var(--navy-400); }
+.bg-navy-500 { background-color: var(--navy-500); }
+.bg-navy-600 { background-color: var(--navy-600); }
+.bg-navy-700 { background-color: var(--navy-700); }
+.bg-navy-800 { background-color: var(--navy-800); }
+.bg-navy-900 { background-color: var(--navy-900); }
+.bg-navy-950 { background-color: var(--navy-950); }
+
+/* Navy backgrounds with opacity */
+.bg-navy-950\/90 { background-color: rgba(15, 23, 42, 0.9); }
+.bg-navy-950\/95 { background-color: rgba(15, 23, 42, 0.95); }
+.bg-navy-900\/90 { background-color: rgba(21, 45, 74, 0.9); }
+.bg-navy-800\/90 { background-color: rgba(30, 58, 95, 0.9); }
+
+/* Navy text */
+.text-navy-50 { color: var(--navy-50); }
+.text-navy-100 { color: var(--navy-100); }
+.text-navy-200 { color: var(--navy-200); }
+.text-navy-300 { color: var(--navy-300); }
+.text-navy-400 { color: var(--navy-400); }
+.text-navy-500 { color: var(--navy-500); }
+.text-navy-600 { color: var(--navy-600); }
+.text-navy-700 { color: var(--navy-700); }
+.text-navy-800 { color: var(--navy-800); }
+.text-navy-900 { color: var(--navy-900); }
+.text-navy-950 { color: var(--navy-950); }
+
+/* Navy text with opacity */
+.text-navy-900\/80 { color: rgba(21, 45, 74, 0.8); }
+
+/* Navy borders */
+.border-navy-100 { border-color: var(--navy-100); }
+.border-navy-200 { border-color: var(--navy-200); }
+.border-navy-600 { border-color: var(--navy-600); }
+.border-navy-800 { border-color: var(--navy-800); }
+
+/* Navy hover states */
+.hover\:bg-navy-800:hover { background-color: var(--navy-800); }
+.hover\:bg-navy-900:hover { background-color: var(--navy-900); }
+.hover\:text-navy-950:hover { color: var(--navy-950); }
+.group:hover .group-hover\:bg-navy-950\/30 { background-color: rgba(15, 23, 42, 0.3); }
+
+/* Navy with zero opacity (for transitions) */
+.bg-navy-950\/0 { background-color: rgba(15, 23, 42, 0); }
+.bg-navy-950\/30 { background-color: rgba(15, 23, 42, 0.3); }
+
+/* Navy shadows */
+.shadow-navy-900\/30 { --tw-shadow-color: rgba(21, 45, 74, 0.3); --tw-shadow: var(--tw-shadow-colored); }
+
+/* Navy from/to gradients */
+.from-navy-900 { --tw-gradient-from: var(--navy-900); }
+.to-navy-800 { --tw-gradient-to: var(--navy-800); }
+.from-navy-950 { --tw-gradient-from: var(--navy-950); }
+
+/* ===== Arbitrary Values (not in pre-built Tailwind) ===== */
+/* Z-index */
+.\!z-\[60\], .z-\[60\] { z-index: 60; }
+.z-\[100\] { z-index: 100; }
+.z-\[999\] { z-index: 999; }
+
+/* Positioning */
+.bottom-\[6\.5rem\] { bottom: 6.5rem; }
+
+/* Sizing */
+.min-h-\[350px\] { min-height: 350px; }
+.max-h-\[90vh\] { max-height: 90vh; }
+
+/* Colors (arbitrary hex) */
+.bg-\[\#25d366\] { background-color: #25d366; }
+.bg-black\/90 { background-color: rgba(0, 0, 0, 0.9); }
+
 /* ===== Smooth scroll ===== */
 html {
   scroll-behavior: smooth;
